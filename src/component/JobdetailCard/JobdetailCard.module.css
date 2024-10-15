@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+.jobdetailcard {
+  width: 80%;
+  margin: 30px 0px;
+  display: flex;
+  background: #ffffff;
+  box-shadow: 0px 2px 35px 1px #0000001a;
+  padding: 70px 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.jobdetailcard_header {
+  height: auto;
+  width: 100%;
+}
+.jobdetailcard_header_topContainer {
+  display: flex;
+  padding: 10px 0px;
+  gap: 30px;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+.jobdetailcard_header_topContainer p {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 18px;
+  color: #999999;
+  font-weight: 600;
+  font-family: "DM Sans", sans-serif;
+}
+.jobdetailcard_header_titleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+  /* border: 1px solid black; */
+}
+.jobdetailcard_header_titleContainer h2 {
+  font-size: 50px;
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+.jobdetailcard_header_titleContainer button {
+  width: 120px;
+  height: 40px;
+  background: #ed5353;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+}
+.jobdetailcard_header_joblocation {
+  padding: 10px 0px;
+  /* border: 1px solid black; */
+  color: #ed5353;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.jobdetailcard_header_stipendContainer {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  padding: 15px 0px;
+}
+.jobdetailcard_header_stipendContainer_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+  gap: 10px;
+}
+.jobdetailcard_header_stipendContainer_left span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.jobdetailcard_header_stipendContainer_left span #stipend {
+  color: #999999;
+  font-weight: 500;
+}
+
+.jobdetailcard_header_stipendContainer_left p {
+  font-size: 17px;
+  color: #595959;
+  font-weight: 600;
+}
+.jobdetailcard_header_stipendContainer_right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* border: 1px solid black; */
+}
+.jobdetailcard_header_stipendContainer_right span {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.jobdetailcard_header_stipendContainer_right #duration {
+  color: #999999;
+  font-weight: 500;
+}
+.jobdetailcard_header_stipendContainer_right p {
+  font-size: 17px;
+  color: #595959;
+  font-weight: 600;
+}
+.jobdetailcard_main {
+  display: flex;
+
+  width: 100%;
+  flex-direction: column;
+  gap: 2rem;
+  height: auto;
+  padding: 20px 0px;
+}
+.jobdetailcard_main_aboutContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.jobdetailcard_main_aboutContainer h2 {
+  font-size: 22px;
+  color: #000000;
+}
+.jobdetailcard_main_aboutContainer p {
+  font-size: 18px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 550;
+  word-spacing: 2px;
+  line-height: 30px;
+  color: #595959;
+}
+.jobdetailcard_main_jobContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.jobdetailcard_main_jobContainer h2 {
+  font-size: 22px;
+  color: #000000;
+}
+.jobdetailcard_main_jobContainer p {
+  font-size: 18px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 550;
+  word-spacing: 2px;
+  line-height: 30px;
+  color: #595959;
+}
+.jobdetailcard_footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 20px 0px;
+  /* border: 1px solid black; */
+}
+.jobdetailcard_footer_skillsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.jobdetailcard_footer_skillsContainer h2 {
+  font-size: 22px;
+  color: #000000;
+}
+.jobdetailcard_footer_skillsContainer div {
+  display: flex;
+  /* border: 1px solid black; */
+  gap: 2%;
+  padding: 5px 2px;
+}
+.jobdetailcard_footer_skillsContainer div div {
+  background: #ffeeee;
+  padding: 2px 10px;
+  border: none;
+  color: #595959;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.jobdetailcard_footer_infoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.jobdetailcard_footer_infoContainer h2 {
+  font-size: 22px;
+  color: #000000;
+}
+.jobdetailcard_footer_infoContainer p {
+  font-size: 18px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 550;
+  word-spacing: 2px;
+  line-height: 30px;
+  color: #595959;
+}

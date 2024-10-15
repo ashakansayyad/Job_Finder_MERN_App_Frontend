@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+.Container{
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgb(90, 13, 13); */
+    display: flex;
+    flex-direction: row;
+
+}
+.left{
+    width: 60%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    width: 100%;
+    height: 10%;
+    /* border: 1px solid black; */
+    display: flex;
+   
+    justify-content: start;
+    align-items: center;
+    padding-left: 6rem;
+}
+.title{
+    /* margin-bottom: 0.8rem; */
+    font-size: 32px;
+}
+
+.main{
+    width: 100%;
+    height: 80%;
+    /* border: 1px solid black; */
+}
+.form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* padding-left: 8rem; */
+}
+.inputContainer,.inputContainertext{
+    width: 100%;
+    height: 8%;
+    /* border: 1px solid #6b0000; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 6rem;
+    padding-left: 6rem;
+    flex-direction: row;
+}
+.inputContainertext{
+    height:10% !important ;
+    /* border: 1px solid #6b0000; */
+}
+.formTitles{
+    font-weight: 500;
+}
+.cname,.clogo,.cposition,.salary,.jtype,.jremote,.clocation,.jdescription,.jabout,.jskills,.addInfo{
+    width: 70%;
+    height: 80%;
+    border: 2px solid #C2C2C2;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 13px;
+    color: #525252;
+    padding-left: 1rem;
+    outline-style: none;
+    
+}
+.jtype,.jremote{
+    width: 40%;
+    margin-right: 30%;
+}
+
+.jdescription,.jabout{
+    height: 100%;
+    resize: none;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.footer{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: end;
+    align-items: flex-start;
+    padding-right: 10%;
+    /* border: 2px solid black; */
+}
+.cancleBtn{
+    width: 150px;
+    background-color: transparent;
+    color: #C2C2C2;
+    border:2px solid #CECECE;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 1rem;
+    font-size: 18px;
+    font-family: "DM Sans", sans-serif;
+    height: 35px;
+    font-weight: 500;
+}
+.addjbBtn{
+    width: 150px;
+    background-color: #ED5353;
+    color: #FFFFFF;
+    border:none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: "DM Sans", sans-serif;
+    height: 35px;
+    font-weight: 500;
+}
+
+.right{
+    width: 40%;
+    height: 100%;
+   background-image: url('../../assets/addjob.png');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size:cover;  
+}
+.right .leftTitle{
+    font-size: 35px;
+    width: 100%;
+    height: 20%;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-weight: 500;
+    font-family: "DM Sans", sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.desc{
+    font-family: "DM Sans", sans-serif;
+    color: #525252;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+#sign{
+    font-family: "DM Sans", sans-serif;
+    color:#000000;
+    font-weight: 600;
+    cursor: pointer;
+}

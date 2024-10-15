@@ -1,0 +1,263 @@
+.joblistcard {
+    width: 70%;
+    padding: 20px 50px;
+    display: flex;
+
+    justify-content: space-between;
+    box-shadow: 0px 0px 22px 2px #FF202040;
+}
+
+.joblistcard_left {
+    width: 50%;
+    display: flex;
+    gap: 20px;
+}
+
+.joblistcard_left_logo {
+    width: 15%;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.joblistcard_left_logo img {
+    width: auto;
+    border-radius: 12px;
+    height: 60px;
+}
+
+.joblistcard_left_description {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.joblistcard_left_description h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.salary_location {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.salary_location p {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    color: #9C9C9C;
+}
+
+.flagContainer {
+    display: flex;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    gap: 10px;
+}
+.cnlogo{
+    width: 30px;
+    height: auto;
+}
+.joblistcard_left_description_remote_container {
+    display: flex;
+    gap: 50px;
+    margin: 10px 0px;
+}
+
+.joblistcard_left_description_remote_container p {
+    color: #ED5353;
+    font-weight: 500;
+}
+
+.joblistcard_right {
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    padding: 0px 20px;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.joblistcard_right_skills {
+    display: flex;
+    gap: 20px;
+}
+
+.joblistcard_right_skills p {
+    /* width: auto; */
+    padding: 1px 1px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #FFEEEE;
+    color: #000000;
+    font-weight: 600;
+}
+
+.joblistcard_right_buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.joblistcard_right_buttons button {
+    width: 120px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 3.9px;
+    cursor: pointer;
+    box-shadow: 0px 0px 22px 2px #FF202040;
+}
+
+.joblistcard_right_buttons_edit {
+    background-color: transparent;
+    border: 2px solid #ED5353;
+    color: #ED5353;
+}
+
+.joblistcard_right_buttons_view {
+    background: #ED5353;
+    color: #FFFFFF;
+    border: none;
+}
+
+/* Media Queries */
+
+/* For tablets and smaller desktops (1024px and below) */
+@media (max-width: 1024px) {
+    .joblistcard {
+        width: 90%;
+        padding: 15px 40px;
+    }
+
+    .joblistcard_left_logo {
+        width: 20%;
+    }
+
+    .joblistcard_right_skills p {
+        width: 70px;
+        height: 25px;
+    }
+
+    .joblistcard_right_buttons button {
+        width: 110px;
+    }
+}
+
+/* For mobile devices (768px and below) */
+@media (max-width: 768px) {
+    .joblistcard {
+        flex-direction: column;
+        width: 100%;
+        padding: 15px 20px;
+        gap: 15px;
+    }
+
+    .joblistcard_left_logo {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .joblistcard_left_logo img {
+        height: 50px;
+    }
+
+    .joblistcard_left_description h2 {
+        font-size: 18px;
+    }
+
+    .salary_location {
+        justify-content: space-between;
+        margin: 8px 0;
+    }
+
+    .salary_location p {
+        font-size: 16px;
+    }
+
+    .joblistcard_left_description_remote_container {
+        gap: 30px;
+    }
+
+    .joblistcard_right_skills {
+        gap: 15px;
+    }
+
+    .joblistcard_right_buttons button {
+        width: 100px;
+        height: 28px;
+        font-size: 14px;
+    }
+}
+
+/* For small mobile devices (375px and below) */
+@media (max-width: 376px) {
+    .joblistcard {
+        margin: 15px 15px;
+        padding: 10px 15px;
+        /* border: 1px solid black; */
+        gap: 10px;
+    }
+    .joblistcard_left{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .joblistcard_left_logo {
+        width: 20%;
+       align-items: center;
+        padding: auto;
+        margin: auto;
+        /* border: 1px solid black; */
+    }
+    .joblistcard_left_logo img {
+        width: 50px;
+        height: auto;
+       
+    }
+
+    .joblistcard_left_description h2 {
+        font-size: 20px;
+     
+        /* border: 1px solid black; */
+    }
+
+    .salary_location p {
+        font-size: 18px;
+        /* border: 1px solid black; */
+    }
+    .salary_location {
+        width: 100%;
+        /* border: 1px solid black; */
+       justify-content: space-around;
+    }
+
+    .flagContainer {
+        gap: 8px;
+    }
+.joblistcard_right{
+    width: 100%;
+ /* border: 1px solid black; */
+    margin: 20px 0px;
+    gap: 20px;
+    padding: 20px 10px;
+}
+    .joblistcard_right_skills p {
+        width:auto;
+        padding: 2px 2px;
+        text-align: center;
+        height: auto;
+        font-size: 15px;
+    }
+.joblistcard_left_description_remote_container p{
+    font-size: 18px;
+}
+    .joblistcard_right_buttons button {
+        width: 100px;
+        height: 30px;
+        font-size: 15px;
+    }
+}
