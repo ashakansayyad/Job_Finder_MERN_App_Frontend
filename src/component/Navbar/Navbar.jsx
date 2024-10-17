@@ -11,11 +11,7 @@ function Navbar() {
   // if(!loggedUser){
   //   return null;
   // }
-  useEffect(() => {
-    if (loggedUser) {
-      console.log("loggedUser: ", loggedUser);
-    }
-  }, [loggedUser]);
+  
 
   const isLoggedIn = localStorage.getItem("token");
   const handleLogout = () => {

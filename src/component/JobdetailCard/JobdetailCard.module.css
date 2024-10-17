@@ -158,6 +158,7 @@
 }
 .jobdetailcard_footer {
   display: flex;
+  width: 100%;
   flex-direction: column;
   gap: 1.2rem;
   padding: 20px 0px;
@@ -167,6 +168,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  
 }
 .jobdetailcard_footer_skillsContainer h2 {
   font-size: 22px;
@@ -204,4 +206,111 @@
   word-spacing: 2px;
   line-height: 30px;
   color: #595959;
+}
+
+
+/* Media Queries for Responsive Design */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  .jobdetailcard {
+    width: 90%;
+    padding: 40px 20px;
+  }
+
+  .jobdetailcard_header_titleContainer h2 {
+    font-size: 36px;
+  }
+
+  .jobdetailcard_header_titleContainer button {
+    width: 100px;
+    font-size: 14px;
+  }
+
+  .jobdetailcard_header_joblocation {
+    font-size: 16px;
+  }
+
+  .jobdetailcard_header_stipendContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .jobdetailcard_header_stipendContainer_left,
+  .jobdetailcard_header_stipendContainer_right {
+    width: 100%;
+  }
+
+  .jobdetailcard_main_aboutContainer h2,
+  .jobdetailcard_main_jobContainer h2 {
+    font-size: 20px;
+  }
+
+  .jobdetailcard_main_aboutContainer p,
+  .jobdetailcard_main_jobContainer p {
+    font-size: 16px;
+  }
+
+  .jobdetailcard_footer_skillsContainer h2,
+  .jobdetailcard_footer_infoContainer h2 {
+    font-size: 20px;
+  }
+
+  .jobdetailcard_footer_skillsContainer div {
+    flex-direction: column;
+  }
+
+  .jobdetailcard_footer_skillsContainer div div {
+    margin-bottom: 5px;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+  .jobdetailcard {
+    width: 95%;
+    padding: 30px 15px;
+  }
+
+  .jobdetailcard_header_titleContainer h2 {
+    font-size: 28px;
+  }
+
+  .jobdetailcard_header_titleContainer button {
+    width: 80px;
+    font-size: 12px;
+  }
+
+  .jobdetailcard_header_joblocation {
+    font-size: 14px;
+  }
+
+  .jobdetailcard_header_stipendContainer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .jobdetailcard_header_stipendContainer_left p,
+  .jobdetailcard_header_stipendContainer_right p {
+    font-size: 14px;
+  }
+
+  .jobdetailcard_main_aboutContainer h2,
+  .jobdetailcard_main_jobContainer h2 {
+    font-size: 18px;
+  }
+
+  .jobdetailcard_main_aboutContainer p,
+  .jobdetailcard_main_jobContainer p {
+    font-size: 14px;
+  }
+
+  .jobdetailcard_footer_skillsContainer h2,
+  .jobdetailcard_footer_infoContainer h2 {
+    font-size: 18px;
+  }
+
+  .jobdetailcard_footer_skillsContainer div {
+    flex-direction: column;
+  }
 }

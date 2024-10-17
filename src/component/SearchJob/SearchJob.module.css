@@ -1,0 +1,100 @@
+/* Styles for larger screens (default) */
+.searchjob {
+    background-color: white;
+    padding: 20px;
+    width:auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px;
+}
+
+.search_bar input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.skills_dropdown {
+    display: flex;
+ 
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.skills_button {
+    padding: 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.action_buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.apply_btn, .clear_btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.apply_btn {
+    background-color: #ff4c4c;
+    color: white;
+}
+
+.clear_btn {
+    background-color: transparent;
+    color: #ff4c4c;
+    cursor: pointer;
+}
+
+/* Tablet view: screen width between 768px and 1024px */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .searchjob {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .skills_button, .apply_btn, .clear_btn {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+}
+
+/* Mobile view: screen width less than or equal to 376px */
+@media (max-width: 376px) {
+    .searchjob {
+        width: 100%;
+        padding: 10px;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .search_bar input[type="text"] {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .skills_button, .apply_btn, .clear_btn {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .action_buttons {
+        flex-direction: column;
+        gap: 5px;
+    }
+}

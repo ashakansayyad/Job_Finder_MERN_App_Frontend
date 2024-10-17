@@ -23,6 +23,28 @@ export const getJobById = async(id)=>{
     });
     return res;
 }
+
+export const addJob = async(data)=>{
+    const headers = addTokenToHeader({headers:{}});
+    const res = await axios.post(`${import.meta.env.VITE_BASE_URL}/api/job`,data,{
+        headers
+    });
+    return res;
+}
+
+export const editJob = async(data,id)=>{
+    const headers = addTokenToHeader({headers:{}});
+    const res = await axios.put(`${import.meta.env.VITE_BASE_URL}/api/job/${id}`,data,{
+        headers
+    });
+    return res;
+}
+
+
+export const searchJob = async(title)=>{
+    const res= await axios.get(`${import.meta.env.VITE_BASE_URL}/api/job/search/${title}`);
+    return res;
+}
 // Normal Ways to Pass Headers in React:
 // const getAllJobs = async () => {
 //     const token = localStorage.getItem("token");  // Retrieve the token

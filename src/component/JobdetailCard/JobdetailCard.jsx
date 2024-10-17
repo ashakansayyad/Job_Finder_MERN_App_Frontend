@@ -2,8 +2,11 @@ import React from 'react';
 import stipend_icon from '../../assets/stipend.png';
 import duration_icon from '../../assets/duration.png';
 import styles from './JobdetailCard.module.css';
+import { useNavigate } from 'react-router-dom';
 import { isEditable } from '../../helper/helper';
 function JobdetailCard({jobById}) {
+  const navigate = useNavigate();
+
   return (
     <div className={styles.jobdetailcard} >
      
@@ -13,7 +16,7 @@ function JobdetailCard({jobById}) {
           </div>
           <div className={styles.jobdetailcard_header_titleContainer}>
             <h2>{jobById.position}</h2>
-           {isEditable(jobById.creator) ? <button>Edit job</button> : null } 
+           {isEditable(jobById.creator) ? <button onClick={()=>navigate(`/editjob/${jobById._id}`)} >Edit job</button> : null } 
           </div>
           <div className={styles.jobdetailcard_header_joblocation}><img style={{width:"40px",height:"auto",borderRadius:"4px"}} src={jobById.cnlogo} alt="logo" />| {jobById.location}</div>
           <div className={styles.jobdetailcard_header_stipendContainer}>

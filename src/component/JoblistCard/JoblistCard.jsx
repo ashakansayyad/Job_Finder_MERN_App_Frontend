@@ -1,8 +1,9 @@
 import React from 'react'
 import styles from './JoblistCard.module.css'
-
+import { useNavigate } from 'react-router-dom'
 
 function JoblistCard({position,skills,salary,jobtype,location,remote,id,isEditable,routeToJobDetail,creator,logo,cnlogo}) {
+  const navigate = useNavigate();
   return (
     <div className={styles.joblistcard}>
       <div className={styles.joblistcard_left}>
@@ -20,7 +21,7 @@ function JoblistCard({position,skills,salary,jobtype,location,remote,id,isEditab
                
             </div>
             <div className={styles.joblistcard_left_description_remote_container} >
-            <p>{remote ? "Remote" : "Office"}</p>
+            <p>{remote}</p>
             <p>{jobtype}</p>
 
             </div>
@@ -39,7 +40,7 @@ function JoblistCard({position,skills,salary,jobtype,location,remote,id,isEditab
         <div className={styles.joblistcard_right_buttons}>
           {
             isEditable(creator) ?  <button
-            
+            onClick={()=>navigate(`/editjob/${id}`)}
             className={styles.joblistcard_right_buttons_edit} >Edit job</button> : null
           }
        
