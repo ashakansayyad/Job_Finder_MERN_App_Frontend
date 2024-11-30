@@ -98,7 +98,7 @@ export default function Addjob() {
       placeholder: "Enter Amount in rupees",
       onChange: (e) => {
         setFormData({ ...formData, salary: e.target.value });
-        if (e.target.value.length > 0) {
+        if (e.target.value) {
           setError((error) => ({ ...error, salary: false }));
         }
       },
@@ -243,7 +243,7 @@ export default function Addjob() {
     },
     salary: {
       message: "Salary is required and should be a number",
-      isValid:formData.salary.length > 0,
+      isValid:formData.salary !== "" && !isNaN(Number(formData.salary)),
       onError: () => {
         setError((error) => ({ ...error, salary: true }));
       },
@@ -366,7 +366,7 @@ useEffect(()=>{
   if(isEdit){
     getJobById(id).then(res=>{
       fillJobData(res.data);
-      // setFormData(res.data)
+   
     })
   }
 },[isEdit]);

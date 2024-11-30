@@ -42,7 +42,7 @@ export const editJob = async(data,id)=>{
 
 
 export const searchJob = async(title)=>{
-    const res= await axios.get(`${import.meta.env.VITE_BASE_URL}/api/job/search/${title}`);
+    const res= await axios.post(`${import.meta.env.VITE_BASE_URL}/api/job/search/${title}`);
     return res;
 }
 // Normal Ways to Pass Headers in React:
