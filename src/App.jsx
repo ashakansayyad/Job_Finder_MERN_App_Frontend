@@ -1,9 +1,10 @@
 
-import {Login,Register,Joblist,Jobdetail,Editjob,Addjob,Notfound} from './pages/index'
+import {Login,Register,Joblist,Jobdetail,Addjob,Notfound} from './pages/index'
 import './App.css'
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import {UserProvider} from './Context/UserContext';
-
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function App() {
   
   return (
@@ -23,6 +24,7 @@ function App() {
     </Route>
    
    </Routes>
+   <ToastContainer />
    </BrowserRouter>
    </UserProvider>
   )

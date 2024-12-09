@@ -4,7 +4,7 @@ import styles from "./Login.module.css";
 import { useState } from "react";
 import Form from "../../component/Form/Form";
 import { login } from "../../services/Auth";
-
+import { toast } from "react-toastify";
 
 export default function Login() {
  
@@ -80,18 +80,18 @@ export default function Login() {
       try {
         const res = await login(formData);
         if (res.status === 200) {
-          alert("Logged in Successfully!");
+          toast.success("Logged in Successfully!");
           const token = res.data.token;
           localStorage.setItem("token", token);
          
           navigate("/");
           location.reload();
         } else {
-          alert("Something went wrong");
+          toast.error("Something went wrong");
         }
       } catch (error) {
         if (error.response.status === 400) {
-          alert(error.response.data.message);
+          toast.error(error.response.data.message);
         }
       }
     }

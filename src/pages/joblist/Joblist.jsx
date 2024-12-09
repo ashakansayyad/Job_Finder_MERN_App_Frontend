@@ -6,7 +6,7 @@ import { isEditable } from "../../helper/helper";
 import JoblistCard from "../../component/JoblistCard/JoblistCard";
 import Navbar from "../../component/Navbar/Navbar";
 import SearchJob from "../../component/SearchJob/SearchJob";
-
+import { toast } from "react-toastify";
 export default function Joblist() {
   const [jobs, setJobs] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -33,7 +33,7 @@ export default function Joblist() {
 
   const routeToJobDetail = (id) => {
     if (id === undefined) {
-      alert("Please login first!");
+      toast.info("Please login first!");
       navigate("/login");
     } else {
       navigate(`/list/${id}`);
@@ -61,6 +61,7 @@ export default function Joblist() {
         <svg viewBox="25 25 50 50">
           <circle r="20" cy="50" cx="50"></circle>
         </svg>
+        <p>Loading...</p>
       </div>
     );
   }

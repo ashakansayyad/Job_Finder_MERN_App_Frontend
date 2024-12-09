@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import styles from "./Register.module.css";
 import Form from '../../component/Form/Form';
 import { register } from "../../services/Auth";
+import { toast } from "react-toastify";
 export default function Register() {
   const navigate = useNavigate();
   // form input states
@@ -151,15 +152,15 @@ export default function Register() {
 
         // Check if the registration was successful (status code 201)
         if (res.status === 201) {
-          alert("User Register Successfully!"); // Notify the user of successful registration
+          toast.success("User Register Successfully!"); // Notify the user of successful registration
           navigate("/login"); // Redirect to the homepage
         }
       }catch(err){
           // Handle errors like 400 (User already exists) or others
           if(err.response && err.response.status === 400){
-            alert(err.response.data.message);
+            toast.error(err.response.data.message);
           }else{
-            alert("Something went wrong!");
+            toast.error("Something went wrong!");
           }
       }
   

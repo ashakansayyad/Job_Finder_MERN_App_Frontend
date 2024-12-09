@@ -4,6 +4,7 @@ import JobdetailCard from "../../component/JobdetailCard/JobdetailCard";
 import { getJobById } from "../../services/job";
 import { useNavigate, useParams } from "react-router-dom";
 import Navbar from "../../component/Navbar/Navbar";
+import { toast } from "react-toastify";
 export default function Jobdetail() {
   const [jobById, setJobById] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -26,7 +27,7 @@ export default function Jobdetail() {
         }
       } catch (err) {
         setIsError(true);
-        alert(err.response.data.message);
+        toast.error(err.response.data.message);
         navigate('/login');
       }finally{
         setIsLoading(false);
@@ -49,6 +50,7 @@ export default function Jobdetail() {
     
          <svg viewBox="25 25 50 50">
          <circle r="20" cy="50" cx="50"></circle>
+         <p>Loading...</p>
        </svg>
            </div>
       ) : isError ? (
